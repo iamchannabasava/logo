@@ -1,50 +1,31 @@
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-} 
-
-
-
-.insta{
-    height: 150px;
-    width: 150px;
-    border-radius: 30px;
-    background: radial-gradient( circle at 30% 107%,
-    #fdf497 0%,#fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90% );
-    display: grid;
-    place-items: center;
-    filter: drop-shadow(0 omm 3mm rgb(153 , 153, 153));
-
-} 
-
-.innerbox{
-    height: 120px;
-    width: 120px;
-    border: 10px solid #fff;
-    border-radius: 30px;
-    display: grid;
-    place-items: center;
-    position: relative;
-}
-.innerbox::before{
-    content: '';
-    width: 45px;
-    height: 45px;
-    background: transparent;
+#head{
+    height: 400px;
+    width: 400px;
     border-radius: 50%;
-    border: 10px solid #fff;
-    position: relative;
+    background-color: rgb(225, 165, 13);
 }
-.innerbox::after{
-    content: '';
-    width: 10px;
-    height: 10px;
-    background: #fff;
-    border-radius: 50%;
-    border: 2px solid #fff;
+
+#mouth{
+    height: 55px;
+    width: 200px;
+    background-color: black;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     position: absolute;
-    top: 8px;
-    right: 10px;
+    top: 250px;
+    left: 100px;
+}
+
+.lefteye,.righteye{
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+.righteye{
+    left: 250px;
 }
